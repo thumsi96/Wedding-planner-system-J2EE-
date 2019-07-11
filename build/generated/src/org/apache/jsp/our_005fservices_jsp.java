@@ -1,0 +1,385 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+import java.util.Base64;
+import java.io.OutputStream;
+import java.io.InputStream;
+import java.util.ArrayList;
+import wedding.beans.postRetriveBean;
+
+public final class our_005fservices_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html lang=\"en\">\n");
+      out.write("\n");
+      out.write("    <head>\n");
+      out.write("\n");
+      out.write("        <meta charset=\"utf-8\">\n");
+      out.write("        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n");
+      out.write("        <meta name=\"description\" content=\"\">\n");
+      out.write("        <meta name=\"author\" content=\"\">\n");
+      out.write("\n");
+      out.write("        <title>Home</title>\n");
+      out.write("\n");
+      out.write("        <!-- Bootstrap core CSS-->\n");
+      out.write("        <link href=\"vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n");
+      out.write("\n");
+      out.write("        <!-- Custom fonts for this template-->\n");
+      out.write("        <link href=\"vendor/fontawesome-free/css/all.min.css\" rel=\"stylesheet\" type=\"text/css\">\n");
+      out.write("\n");
+      out.write("        <!-- Page level plugin CSS-->\n");
+      out.write("        <link href=\"vendor/datatables/dataTables.bootstrap4.css\" rel=\"stylesheet\">\n");
+      out.write("\n");
+      out.write("        <!-- Custom styles for this template-->\n");
+      out.write("        <link href=\"css/sb-admin.css\" rel=\"stylesheet\">\n");
+      out.write("\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"carasoul.css\">\n");
+      out.write("\n");
+      out.write("    </head>\n");
+      out.write("\n");
+      out.write("    <body id=\"page-top\">\n");
+      out.write("\n");
+      out.write("        <nav class=\"navbar navbar-expand navbar fixed-top navbar-dark bg-dark static-top\">\n");
+      out.write("\n");
+      out.write("            <a class=\"navbar-brand mr-1\" href=\"our_services.jsp\"><h3>Wedding Bells</h3></a>\n");
+      out.write("            <a class=\"navbar-brand\" href=\"our_services.jsp\">\n");
+      out.write("                <img src=\"wedding-couple.png\" alt=\"logo\" style=\"width:40px;\">\n");
+      out.write("            </a>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n");
+      out.write("                <span class=\"navbar-toggler-icon\"></span>\n");
+      out.write("            </button>\n");
+      out.write("            <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">\n");
+      out.write("                <ul class=\"navbar-nav\">\n");
+      out.write("                    <li class=\"nav-item\">\n");
+      out.write("                        <a class=\"nav-link\" href=\"home.jsp\">Home</a>\n");
+      out.write("                    </li>\n");
+      out.write("                    <li class=\"nav-item \">\n");
+      out.write("                        <a class=\"nav-link\" href=\"about_us.jsp\">About Us</a>\n");
+      out.write("                    </li>\n");
+      out.write("                    <li class=\"nav-item active\">\n");
+      out.write("                        <a class=\"nav-link\" href=\"postRetriveServlet\">Our Services <span class=\"sr-only\">(current)</span></a>\n");
+      out.write("                    </li>\n");
+      out.write("                    <li class=\"nav-item\">\n");
+      out.write("                        <a class=\"nav-link\" href=\"gallery.jsp\">Gallery</a>\n");
+      out.write("                    </li>\n");
+      out.write("                    <li class=\"nav-item\">\n");
+      out.write("                        <a class=\"nav-link\" href=\"vendors.jsp\">Vendors</a>\n");
+      out.write("                    </li>\n");
+      out.write("                    <li class=\"nav-item\">\n");
+      out.write("                        <a class=\"nav-link\" href=\"special_offers.jsp\">Special Offers</a>\n");
+      out.write("                    </li>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                </ul>\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("            <a href=\"index.jsp\" class=\"btn btn-dark active\" role=\"button\" aria-disabled=\"true\">Log In</a>\n");
+      out.write("\n");
+      out.write("            <a href=\"register.jsp\" class=\"btn btn-dark active\" role=\"button\" aria-disabled=\"true\">Registration</a>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("        </nav>\n");
+      out.write("        <div class=\"container\">\n");
+      out.write("            <div class=\"jumbotron\">\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                ");
+
+        // retrieve your list from the request, with casting 
+                    ArrayList<postRetriveBean> list = (ArrayList<postRetriveBean>) request.getAttribute("postdetails");
+
+        // print the information about every category of the list
+                    for (postRetriveBean category : list) {
+                
+                 //out.println(category.getId()); 
+                  //  out.println(category.getEmail());
+                   // out.println(category.getPname());
+                    //out.println(category.getPrice());
+                    int blobLength = (int) category.getPic().length();
+
+                    String encode = Base64.getEncoder().encodeToString(category.getPic().getBytes(1, blobLength));
+                
+                
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("             <div class=\"card\" style=\"width: 18rem;\">\n");
+      out.write("                    <img class=\"card-img-top\" src=\"data:image/jpeg;base64,");
+ out.println(encode); 
+      out.write("\" alt=\"Card image cap\">\n");
+      out.write("                    <div class=\"card-body\">\n");
+      out.write("                        <h4 class=\"card-title\">");
+ out.println(category.getCat()); 
+      out.write("</h4>\n");
+      out.write("                        <h5 class=\"card-title\">");
+ out.println(category.getPname()); 
+      out.write("</h5>\n");
+      out.write("                        <h6 class=\"card-title\">");
+out.println(category.getPrice()); 
+      out.write("Lkr</h6>\n");
+      out.write("                        \n");
+      out.write("                        <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n");
+      out.write("                        <form action=\"inquiry.jsp\" method=\"POST\">\n");
+      out.write("                        \n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            <input type=\"submit\"  class=\"btn btn-primary\">Make an Inquiry </input> <br> <br>\n");
+      out.write("                           <input type=\"submit\"  class=\"btn btn-primary\">Add to cart </input><br>\n");
+      out.write("                        \n");
+      out.write("                        </form>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                       \n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                ");
+ }
+                
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("        <!-- Footer -->\n");
+      out.write("        <footer class=\"page-footer font-small mdb-color pt-4\">\n");
+      out.write("\n");
+      out.write("            <!-- Footer Links -->\n");
+      out.write("            <div class=\"container text-center text-md-left\">\n");
+      out.write("\n");
+      out.write("                <!-- Footer links -->\n");
+      out.write("                <div class=\"row text-center text-md-left mt-3 pb-3\">\n");
+      out.write("\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("                    <div class=\"col-md-3 col-lg-3 col-xl-3 mx-auto mt-3\">\n");
+      out.write("                        <h6 class=\"text-uppercase mb-4 font-weight-bold\">Company name</h6>\n");
+      out.write("                        <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur\n");
+      out.write("                            adipisicing elit.</p>\n");
+      out.write("                    </div>\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("\n");
+      out.write("                    <hr class=\"w-100 clearfix d-md-none\">\n");
+      out.write("\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("                    <div class=\"col-md-2 col-lg-2 col-xl-2 mx-auto mt-3\">\n");
+      out.write("                        <h6 class=\"text-uppercase mb-4 font-weight-bold\">Products</h6>\n");
+      out.write("                        <p>\n");
+      out.write("                            <a href=\"#!\">MDBootstrap</a>\n");
+      out.write("                        </p>\n");
+      out.write("                        <p>\n");
+      out.write("                            <a href=\"#!\">MDWordPress</a>\n");
+      out.write("                        </p>\n");
+      out.write("                        <p>\n");
+      out.write("                            <a href=\"#!\">BrandFlow</a>\n");
+      out.write("                        </p>\n");
+      out.write("                        <p>\n");
+      out.write("                            <a href=\"#!\">Bootstrap Angular</a>\n");
+      out.write("                        </p>\n");
+      out.write("                    </div>\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("\n");
+      out.write("                    <hr class=\"w-100 clearfix d-md-none\">\n");
+      out.write("\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("                    <div class=\"col-md-3 col-lg-2 col-xl-2 mx-auto mt-3\">\n");
+      out.write("                        <h6 class=\"text-uppercase mb-4 font-weight-bold\">Useful links</h6>\n");
+      out.write("                        <p>\n");
+      out.write("                            <a href=\"#!\">Your Account</a>\n");
+      out.write("                        </p>\n");
+      out.write("                        <p>\n");
+      out.write("                            <a href=\"#!\">Become an Affiliate</a>\n");
+      out.write("                        </p>\n");
+      out.write("                        <p>\n");
+      out.write("                            <a href=\"#!\">Shipping Rates</a>\n");
+      out.write("                        </p>\n");
+      out.write("                        <p>\n");
+      out.write("                            <a href=\"#!\">Help</a>\n");
+      out.write("                        </p>\n");
+      out.write("                    </div>\n");
+      out.write("\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("                    <hr class=\"w-100 clearfix d-md-none\">\n");
+      out.write("\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("                    <div class=\"col-md-4 col-lg-3 col-xl-3 mx-auto mt-3\">\n");
+      out.write("                        <h6 class=\"text-uppercase mb-4 font-weight-bold\">Contact</h6>\n");
+      out.write("                        <p>\n");
+      out.write("                            <i class=\"fas fa-home mr-3\"></i> New York, NY 10012, US</p>\n");
+      out.write("                        <p>\n");
+      out.write("                            <i class=\"fas fa-envelope mr-3\"></i> info@gmail.com</p>\n");
+      out.write("                        <p>\n");
+      out.write("                            <i class=\"fas fa-phone mr-3\"></i> + 01 234 567 88</p>\n");
+      out.write("                        <p>\n");
+      out.write("                            <i class=\"fas fa-print mr-3\"></i> + 01 234 567 89</p>\n");
+      out.write("                    </div>\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("\n");
+      out.write("                </div>\n");
+      out.write("                <!-- Footer links -->\n");
+      out.write("\n");
+      out.write("                <hr>\n");
+      out.write("\n");
+      out.write("                <!-- Grid row -->\n");
+      out.write("                <div class=\"row d-flex align-items-center\">\n");
+      out.write("\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("                    <div class=\"col-md-7 col-lg-8\">\n");
+      out.write("\n");
+      out.write("                        <!--Copyright-->\n");
+      out.write("                        <p class=\"text-center text-md-left\">© 2018 Copyright:\n");
+      out.write("                            <a href=\"https://mdbootstrap.com/education/bootstrap/\">\n");
+      out.write("                                <strong> MDBootstrap.com</strong>\n");
+      out.write("                            </a>\n");
+      out.write("                        </p>\n");
+      out.write("\n");
+      out.write("                    </div>\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("                    <div class=\"col-md-5 col-lg-4 ml-lg-0\">\n");
+      out.write("\n");
+      out.write("                        <!-- Social buttons -->\n");
+      out.write("                        <div class=\"text-center text-md-right\">\n");
+      out.write("                            <ul class=\"list-unstyled list-inline\">\n");
+      out.write("                                <li class=\"list-inline-item\">\n");
+      out.write("                                    <a class=\"btn-floating btn-sm rgba-white-slight mx-1\" href=\"https://www.facebook.com/\">\n");
+      out.write("                                        <i class=\"fab fa-facebook-f\"></i>\n");
+      out.write("                                    </a>\n");
+      out.write("                                </li>\n");
+      out.write("                                <li class=\"list-inline-item\">\n");
+      out.write("                                    <a class=\"btn-floating btn-sm rgba-white-slight mx-1\">\n");
+      out.write("                                        <i class=\"fab fa-twitter\"></i>\n");
+      out.write("                                    </a>\n");
+      out.write("                                </li>\n");
+      out.write("                                <li class=\"list-inline-item\">\n");
+      out.write("                                    <a class=\"btn-floating btn-sm rgba-white-slight mx-1\">\n");
+      out.write("                                        <i class=\"fab fa-google-plus-g\"></i>\n");
+      out.write("                                    </a>\n");
+      out.write("                                </li>\n");
+      out.write("                                <li class=\"list-inline-item\">\n");
+      out.write("                                    <a class=\"btn-floating btn-sm rgba-white-slight mx-1\">\n");
+      out.write("                                        <i class=\"fab fa-linkedin-in\"></i>\n");
+      out.write("                                    </a>\n");
+      out.write("                                </li>\n");
+      out.write("                            </ul>\n");
+      out.write("                        </div>\n");
+      out.write("\n");
+      out.write("                    </div>\n");
+      out.write("                    <!-- Grid column -->\n");
+      out.write("\n");
+      out.write("                </div>\n");
+      out.write("                <!-- Grid row -->\n");
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("            <!-- Footer Links -->\n");
+      out.write("\n");
+      out.write("        </footer>\n");
+      out.write("        <!-- Footer -->   \n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("        <!-- Bootstrap core JavaScript-->\n");
+      out.write("        <script src=\"vendor/jquery/jquery.min.js\"></script>\n");
+      out.write("        <script src=\"vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>\n");
+      out.write("\n");
+      out.write("        <!-- Core plugin JavaScript-->\n");
+      out.write("        <script src=\"vendor/jquery-easing/jquery.easing.min.js\"></script>\n");
+      out.write("\n");
+      out.write("        <!-- Custom scripts for all pages-->\n");
+      out.write("        <script src=\"js/sb-admin.min.js\"></script>\n");
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
